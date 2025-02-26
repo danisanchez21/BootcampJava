@@ -1,0 +1,39 @@
+body{
+
+
+    background-color: rgb(193, 250, 254);
+}
+
+caption span{
+    background-color: #00BFFF;
+    
+    }
+
+table{
+
+    width: 740px;
+    height: 200px;
+    background-color: #FEE4C3;
+    border-style:solid;
+    border-color: black;
+    border-top-left-radius: 20px;
+    border-width: 6px; 
+
+    
+}
+
+td {
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-bottom-width: 3px; 
+    border-left-width: 2px;   
+    text-align: center;
+}
+
+tfoot td {
+    background-color: #00BFFF;  
+    text-align: center; 
+    border: none;  /* Elimina el borde en las celdas del pie de tabla */
+}
+
+

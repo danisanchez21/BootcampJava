@@ -1,0 +1,18 @@
+body{
+
+background-color: bisque;
+
+
+}
+
+p{
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+    background-color: rgb(205, 204, 204);
+    text-align: center;
+    border-style:double;
+    border-color: rgb(1, 207, 49);
+    border-radius: 2px;
+
+}
