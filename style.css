@@ -1,0 +1,27 @@
+body{
+    background-color:rgb(217, 192, 158);
+}
+
+
+p {
+    column-count: 3;
+    column-gap: 40px; /* Separación entre columnas */
+    column-rule: 2px solid #ff0000; /* Línea separadora de 2px, estilo sólido y color rojo */
+}
+
+h1 {
+    display: inline;
+    color: red;
+}
+
+h1:hover {
+    
+    color: rgb(55, 0, 255); /* Se cambiara el color del h1 al posicionarse encima */
+}
+
+p::selection {
+    
+    background-color: #ff5e00; /* Al seleccionar texto saltará el color de fondo indicado*/
+    color: rgb(51, 255, 0); /* Se cambiara el color del texto */
+}
+
