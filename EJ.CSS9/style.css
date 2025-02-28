@@ -1,0 +1,80 @@
+@media (min-width:100px){
+
+.header1{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(0, 153, 153);
+    margin-bottom: 10px;
+}
+.header2{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(0, 153, 153);
+    margin-bottom: 10px;
+}
+
+.section1{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(250, 217, 0);
+    margin-bottom: 10px;
+}
+
+.aside1{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(0, 210, 45);
+    margin-bottom: 10px;
+}
+
+.footer-item {
+    background: grey;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
+    float: left;
+    width: 100%; /* Cuatro columnas en pantallas grandes */
+    box-sizing: border-box; /* Para que el padding no afecte el ancho */
+    margin-bottom: 10px;
+}
+  
+  /* Para tablets: 2 columnas */
+  @media (max-width: 768px) {
+    .footer-item {
+      width: 50%; /* Se acomodan en 2 columnas */
+    }
+    .section1{
+
+      height: 550px;
+  }
+  }
+  
+  /* Para móviles: 1 columna */
+  @media (max-width: 480px) {
+    .footer-item {
+      width: 20%; /* Se apilan en una sola columna */
+    }
+    .aside1{
+
+        width: 80%;
+    }
+  }
+  .section1{
+
+      height: 100px;
+  }
+    
+  }
+
+    @media (max-width: 480px) {
+    .footer-item {
+      width: 20%; /* Se apilan en una sola columna */
+    }
+    .aside1{
+
+        width: 80%;
+    }
+  }
+
+
+

@@ -1,0 +1,35 @@
+.circulo-1{
+   
+    width: 212px;
+    height: 212px;
+    border-radius: 50%;
+    background-color: red; 
+
+
+}
+.circulo-2{
+   
+    width: 212px;
+    height: 212px;
+    border-radius: 50%;
+    background-color: blue; 
+
+}
+
+.circulo-3{
+    
+    width: 212px;
+    height: 212px;
+    border-radius: 50%;
+    background-color: yellowgreen; 
+
+}
+.circulo-4{
+    
+    width: 212px;
+    height: 212px;
+    border-radius: 50%;
+    background-color: yellow; 
+    position: right;
+
+}
