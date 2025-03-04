@@ -1,0 +1,14 @@
+div{
+float: left;
+width: 558px;
+height: 600px;
+clear:both;
+
+}
+
+.imagen-guernica{
+    top:15px;
+    width: 600px;
+    float: right;
+    position: absolute;
+}
