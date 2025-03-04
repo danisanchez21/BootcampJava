@@ -6,7 +6,12 @@ Green: #00B172
 White: #FFF
 
 */
+section{
+border: 3px solid orange;  
+border-radius: 10px;
+position: relative;
 
+}
 /* Estilos para Desktop */
 @media (min-width: 1024px) {
     /* Aquí van los estilos específicos para dispositivos de escritorio */
@@ -24,11 +29,15 @@ White: #FFF
         display: flex;
         justify-content: flex-end;
         padding-right:20px;
+        padding-top: 5px;
+        font-size:x-large;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: #1A1A1A;
     }
 
     .logospotify{
 
-        padding-left:10px;
+        padding-left:15px;
     }
 
     .landingimg{
@@ -39,25 +48,31 @@ White: #FFF
     }
 
     .overlay-texto {
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        color: white; 
-        font-size: 45px; 
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        color: whitesmoke; 
+        font-size: 85px; 
         font-weight: bold; 
-        text-align: center; 
+        position: absolute; /* se "apila" encima de la imagen */
+        top: 0; left: 0; right: 0; bottom: 0;
+        margin-top: -25%;
+        text-align: center;
+        align-items: center;
         font-family: 'Circular', 'Montserrat', sans-serif;
     }
     
     .overlay-texto2 {
-        position: absolute; 
-        top: 65%; 
-        left: 50%;
-        color: white;  
-        transform: translate(-50%, -50%); 
-        font-size: 20px; 
-        text-align: center; 
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        color: whitesmoke; 
+        font-size: 35px; 
+        position: absolute; /* se "apila" encima de la imagen */
+        top: 0; left: 0; right: 0; bottom: 0;
+        text-align: center;
+        align-items: center;
+        font-family: 'Circular', 'Montserrat', sans-serif;
     }
     
     .logospotify{
@@ -68,25 +83,133 @@ White: #FFF
 
     h2{
         font-weight: bold; 
-        text-align: center; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        border-bottom: 2px solid #00B172;; 
+        padding-bottom: 5px; 
+        display: inline-block;
+        font-size: 30px;
+        
+    }
+
+    h3{
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        border-bottom: 2px solid white;
+        padding-bottom: 5px; 
+        display: inline-block;
+        font-size: 30px;
+        color: white;
+        text-align: left;
+        margin-left: 60px;
+        margin-top: 60px;
+    }
+    .div2{
+
+        background-color: #00B172;
+        text-align: left;
+    }
+    div{
+    padding-top: 10px;
+    text-align: center;
+
+    }
+    content {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        text-align: center;
+        /* border: 3px solid orange;  */
+        border-radius: 10px;
+    }
+        content div {
+        width: 65%;
+        padding: 50px;
+        /* border: 2px solid green; */
+        border-radius: 5px;
+        
+    }
+
+    content img {
+        width: 160px; /* Ajusta el tamaño de los íconos */
+      
+    }
+    
+    content p {
+        font-size: 24px;
+        color: #00B172;
+        font-weight: bold;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        
+        
+       
+    }
+
+    content p2 {
+        font-size: 21px;
+        color: black;
+        font-weight: bold;
         font-family: 'Circular', 'Montserrat', sans-serif;
         
     }
 
+    .texto7{
+        margin-left: 60px;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+        
+    }
+    .texto8{
+        width: 30%;
+        font-size: 20px;
+        margin-left: 60px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+        
+    }
+    .texto9{
+
+        font-size: 30px;
+        margin-left: 60px;
+        display: inline-block;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+    }
+    .texto10{
+        width: 30%;
+        font-size: 20px;
+        margin-left: 60px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    .texto11{
+
+        font-size: 30px;
+        margin-left: 60px;
+        display: inline-block;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+        
+    }
+    .texto12{
+        font-size: 20px;
+        margin-left: 60px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+        padding-bottom: 50px;
+        width: 30%;
+
+
+    }
     
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   /* Estilos para Tablet */
@@ -111,7 +234,6 @@ White: #FFF
     .logospotify{
 
         padding-left:10px;
-     
     }
 
 
@@ -123,25 +245,33 @@ White: #FFF
     }
 
     .overlay-texto {
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        color: white; 
-        font-size: 45px; 
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        color: whitesmoke; 
+        font-size: 85px; 
         font-weight: bold; 
-        text-align: center; 
+        position: absolute; /* se "apila" encima de la imagen */
+        top: 0; left: 0; right: 0; bottom: 0;
+        margin-top: -25%;
+        text-align: center;
+        align-items: center;
+        z-index: 10;              /* Asegura que el texto quede por encima de la imagen */
         font-family: 'Circular', 'Montserrat', sans-serif;
     }
     
     .overlay-texto2 {
-        position: absolute; 
-        top: 65%; 
-        left: 50%;
-        color: white;  
-        transform: translate(-50%, -50%); 
-        font-size: 20px; 
-        text-align: center; 
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        color: whitesmoke; 
+        font-size: 35px; 
+        position: absolute; /* se "apila" encima de la imagen */
+        top: 0; left: 0; right: 0; bottom: 0;
+        text-align: center;
+        align-items: center;
+        z-index: 10;              /* Asegura que el texto quede por encima de la imagen */
+        font-family: 'Circular', 'Montserrat', sans-serif;
     }
     
     .logospotify{
@@ -157,62 +287,278 @@ White: #FFF
         
     }
 
+    .texto7{
+        margin-left: 60px;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+        
+    }
+    .texto8{
+        width: 30%;
+        font-size: 20px;
+        margin-left: 60px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+        
+    }
+    .texto9{
+
+        font-size: 30px;
+        margin-left: 60px;
+        display: inline-block;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+    }
+    .texto10{
+        width: 30%;
+        font-size: 20px;
+        margin-left: 60px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    .texto11{
+
+        font-size: 30px;
+        margin-left: 60px;
+        display: inline-block;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+        
+    }
+    .texto12{
+        font-size: 20px;
+        margin-left: 60px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+        padding-bottom: 50px;
+        width: 30%;
+
+
+    }
+
+    
+
     
 }
 
   /* Estilos para Móvil */
-@media (max-width: 767px) {
+/* @media (max-width: 767px) { */
     /* Aquí van los estilos específicos para dispositivos móviles */
 
-    section{
-
+/* Estilos para Mobile */
+@media (max-width: 768px) {
+    /* Header: logo y nav en columna */
+    header {
+        width: 100%;
         display: flex;
-        justify-content: center; /* Centra la imagen dentro del div */
-        text-align: center;
+        flex-direction: column; /* Apila logo y nav */
+        align-items: center;
+        padding: 10px;
     }
+
+    /* Nav: en una sola línea debajo del logo y centrado */
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Centra los elementos del nav */
+        font-size: medium; /* Tamaño de fuente adecuado para móvil */
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: #1a1a1a;
+    }
+
+    nav ul {
+      
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin-top: 5%;
+        align-items: center;
+        font-size: large;
+        padding-right: 6%;
+      }
 
     .logospotify {
-        display: block;
-        margin: 0 auto; /* Centra horizontalmente */
-        width: 180px;
-    }
-    
-
-
-    .landingimg{
-
-
+        height: 40px; /* Logo más pequeño para móvil */
+        padding-right: 5%;
     }
 
+    .landingimg {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Ajuste de las superposiciones sobre la imagen */
     .overlay-texto {
-        position: absolute; 
-        top: 50%; 
-        left: 50%; 
-        transform: translate(-50%, -50%); 
-        color: white; 
-        font-size: 25px; 
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        color: whitesmoke; 
+        font-size: 25px; /*Reduce el tamaño para móvil */
         font-weight: bold; 
-        text-align: center; 
+        position: absolute; /* se "apila" encima de la imagen */
+        top: 0; left: 0; right: 0; bottom: 0;
+        margin-top: -25%;
+        text-align: center;
+        align-items: center;
+        z-index: 10;              /* Asegura que el texto quede por encima de la imagen */
         font-family: 'Circular', 'Montserrat', sans-serif;
     }
     
     .overlay-texto2 {
-        position: absolute; 
-        top: 65%; 
-        left: 50%;
-        color: white;  
-        transform: translate(-50%, -50%); 
-        font-size: 15px; 
-        text-align: center; 
-    }
-  
-
-    h2{
-        font-weight: bold; 
-        text-align: center; 
+        display: flex;
+        justify-content: center;  /* Centra horizontalmente */
+        align-items: center;      /* Centra verticalmente */
+        color: whitesmoke; 
+        font-size: 10px; /*Reduce el tamaño para móvil */
+        position: absolute; /* se "apila" encima de la imagen */
+        top: 0; left: 0; right: 0; bottom: 0;
+        text-align: center;
+        align-items: center;
+        z-index: 10;              /* Asegura que el texto quede por encima de la imagen */
         font-family: 'Circular', 'Montserrat', sans-serif;
+    }
+    
+    /* Título h2 ajustado para móvil */
+    h2 {
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        border-bottom: 2px solid #00B172;
+        padding-bottom: 5px; 
+        display: inline-block;
+        font-size: 19px; /* Tamaño reducido para móvil */
+        text-align: center;
+    }
+
+    div {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    /* Content: iconos en columna, uno debajo del otro */
+    content {
+        display: flex;
+        flex-direction: column;  /* Cambia a columna para apilar los divs */
+        align-items: center;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    content div {
+        width: 90%; /* Ocupa más ancho en móvil */
+        padding: 20px; /* Reduce el padding */
+        border-radius: 5px;
+    }
+
+    content img {
+        width: 100px; /* Iconos más pequeños para móvil */
+    }
+    
+    content p {
+        font-size: 18xxpx; /* Tamaño de texto reducido */
+        color: #00B172;
+        font-weight: bold;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+    }
+
+    content p2 {
+        font-size: 15px;
+        color: black;
+        font-weight: bold;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+    }
+
+    .texto7{
+        margin-left: 30px;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
         
     }
+    .texto8{
+        width: 30%;
+        font-size: 15px;
+        margin-left: 30px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+        
+    }
+    .texto9{
+
+        font-size: 25px;
+        margin-left: 30px;
+        display: inline-block;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+    }
+    .texto10{
+        width: 30%;
+        font-size: 15px;
+        margin-left: 30px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+    }
+
+    .texto11{
+
+        font-size: 25px;
+        margin-left: 30px;
+        display: inline-block;
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        font-size: 30px;
+        color: white;
+        
+    }
+    .texto12{
+        font-size: 15px;
+        margin-left: 30px;
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        color: white;
+        padding-bottom: 50px;
+        width: 30%;
+
+
+    }
+
+    h3{
+        font-weight: bold; 
+        font-family: 'Circular', 'Montserrat', sans-serif;
+        border-bottom: 2px solid white;
+        padding-bottom: 5px; 
+        display: inline-block;
+        font-size: 25px;
+        color: white;
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 60px;
+    }
+    .div2{
+
+        background-color: #00B172;
+        text-align: left;
+        
+    }
+    div{
+    padding-top: 10px;
+    text-align: center;
+    }
+
+    .spotify-kanye{
+
+        width: 50%;
+        
+       
+    }
 }
-
-
