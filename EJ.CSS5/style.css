@@ -22,8 +22,8 @@ body {
     white 99%, red 99%, 
     red 99.8%, white 99.8%
     );
-border: 15px solid #DBD8CE;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 15px solid #DBD8CE;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .fine-circle {
