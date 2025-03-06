@@ -24,13 +24,13 @@
 .image { background-color: #B7E3E3; }  /* Celeste */
 
 /* 📱 Estilos para móvil (hasta 424px) */
+@media (min-width: 424px) {
 .container {
     display: flex;
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-}
-
+}}
 /* 📏 Estilos para tablet (mínimo 768px) */
 @media (min-width: 768px) {
     .container {
