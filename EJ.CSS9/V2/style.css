@@ -1,0 +1,56 @@
+
+.contenedor-footer {
+    display: grid;
+     grid-template-columns: 1fr; /*En pantallas pequeñas, una sola columna */
+    gap: 20px; 
+  }
+  
+  .columna {
+    background-color: #f0f0f0;
+    padding: 10px;
+
+  }
+
+/* 📱 Móvil (hasta 767px) */
+@media (max-width: 767px) { 
+  .contenedor-footer {
+    display: none; /* Ocultar todos los contenedores */
+  }
+
+  /* Mostrar solo el primer contenedor */
+  .contenedor-footer:nth-child(1) {
+    display: block; /* Mostrar solo el primero */
+  }
+
+  .columna {
+    width: 97%;
+    height: 3px;
+  }
+}
+  
+/*  Tablets (768px o más) */
+@media (min-width: 768px) {
+    .contenedor-footer {
+      grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 columnas en pantallas grandes */
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      grid-template-rows: repeat(2, 1fr);    /* Dos filas */
+      gap: 30px; /* Espacio entre los divs */
+    }
+    .columna {
+      width: 97%;
+      height: 40px;
+    }
+  }
+
+ /* 💻 Escritorio  */
+@media (min-width: 1024px) {
+    .contenedor-footer {
+   
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+            gap: 30px; /* Espacio entre los divs */
+            margin-right: 10px;
+  }
+}
+  

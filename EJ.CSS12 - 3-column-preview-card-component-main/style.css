@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* 💻 Escritorio y Tablets (768px o más) */
+@media (min-width: 768px) {
+      
+.buttondiv{
+
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    /* height: 100vh; Asegura que el contenedor ocupe toda la altura de la pantalla */
+
+
+    }
+
+    
+.boton1{
+    
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #E38525;
+    background-color: white;
+    border-radius: 40px;
+    border-color: transparent;
+    
+        }
+
+        .boton2{
+    
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            color:  #016871;
+            background-color: white;
+            border-radius: 40px;
+            border-color: transparent;
+            
+                }
+
+                .boton3{
+    
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    cursor: pointer;
+                    color: #003F3E;
+                    background-color: white;
+                    border-radius: 40px;
+                    border-color: transparent;
+               
+                    
+                        }
+
+    .sedans{
+        background-color: #E38525;
+        display: table-caption;
+        width: 280px;
+        height: 370px;
+        border-radius: 10px;
+    }
+    
+    
+    .SUV{
+
+        background-color: #E38525;
+        display: table-caption;
+        width: 280px;
+        height: 370px;
+        border-radius: 10px;
+    }
+    
+    .Luxury{
+
+        background-color: #E38525;
+        display: table-caption;
+        width: 280px;
+        height: 370px;
+        border-radius: 10px;
+    }
+    
+    
+    .SUV{
+    
+        background-color: #016871;
+    }
+    
+    
+    .Luxury{
+    
+        background-color: #003F3E;
+    }
+    
+    
+    h1{
+    
+        color: #ffffff;
+        margin: 30px;
+        }
+    p{
+    
+    color: #ffffff;
+    margin: 30px;
+    
+    }
+    
+    .sedansimage{
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    }
+    
+    
+    .SUVimage{
+        margin-top: 30px;
+        margin-left: 30px;
+        
+        }
+    
+        
+        
+    .luxuryimage{
+        margin-top: 30px;
+        margin-left: 30px;
+        
+        }
+
+        .contenedores{
+
+            display: flex;
+            
+                }
+
+
+    }
+
+
+/* 📱 Móvil (hasta 767px) */
+@media (max-width: 767px) { 
+
+    
+    .buttondiv{
+
+        display: flex;
+        justify-content: left; /* Centra horizontalmente */
+        align-items: left; /* Centra verticalmente */
+        margin-left: 30px;
+        /* height: 100vh; Asegura que el contenedor ocupe toda la altura de la pantalla */
+    
+    
+        }
+    
+        
+    .boton1{
+        
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        color: #E38525;
+        background-color: white;
+        border-radius: 40px;
+        border-color: transparent;
+        
+            }
+    
+            .boton2{
+        
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                color:  #016871;
+                background-color: white;
+                border-radius: 40px;
+                border-color: transparent;
+                
+                    }
+    
+                    .boton3{
+        
+                        padding: 10px 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        color: #003F3E;
+                        background-color: white;
+                        border-radius: 40px;
+                        border-color: transparent;
+                   
+                        
+                            }
+.sedans{
+    background-color: #E38525;
+    display: table-caption;
+    width: 280px;
+    height: 370px;
+    border-radius: 10px;
+}
+
+
+.SUV{
+   
+    background-color: #E38525;
+    display: table-caption;
+    width: 280px;
+    height: 370px;
+    border-radius: 10px;
+}
+
+.Luxury{
+   
+    background-color: #E38525;
+    display: table-caption;
+    width: 280px;
+    height: 370px;
+    border-radius: 10px;
+}
+
+
+.SUV{
+
+    background-color: #016871;
+}
+
+
+.Luxury{
+
+    background-color: #003F3E;
+}
+
+
+h1{
+
+    color: #ffffff;
+    margin: 30px;
+    }
+p{
+
+color: #ffffff;
+margin: 30px;
+
+}
+
+.sedansimage{
+margin-top: 30px;
+margin-left: 30px;
+
+}
+
+
+.SUVimage{
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    }
+
+    
+    
+.luxuryimage{
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    }
+.contenedores{
+
+    margin: 7%;
+}
+    
+}
