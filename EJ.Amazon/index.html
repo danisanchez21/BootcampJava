@@ -5,49 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon CV</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/amazon-ember" rel="stylesheet">
+                
 </head>
 <body>
     <header>
-        <img class="amazon_logo" src=".\images\Amazon_logo.svg" alt="">
-        <nav>
-        <div class="links">
-            <a href="https://www.google.com" class="btn">Dani Resumen</a>
-            <a href="https://www.bing.com" class="btn">Contacto</a>
-
-            <div class="busquedadiv">
-                <p class="textobuscar">Buscar</p>
-                <div class="cajabuscar"><form method="get" id="buscarform">
-                    <fieldset>
-                        <input type="text" id="s" value="" />
-                        <input class="button" type="submit" value="" />
-                        <i class="search">Ir</i>
-                    </fieldset>
-                    </form></div>
-                </div>
+        <div class="header-contenedores">
+          <img class="imglogo" src="./images/Amazon_logo.svg" alt="Logo Amazon">
+          <div class="header-filas">
+            <div class="fila1header">
+              <div class="links">
+                <a href="https://www.google.com" class="btn">Dani Resumen</a>
+                <a href="https://www.bing.com" class="btn">Contacto</a>
+              </div>
+            </div>
+            <div class="fila2header">
+              <div class="cajabuscar">
+                <form method="get" id="buscarform">
+                  <fieldset>
+                    <input class="cuadrobusq" type="text" id="s" value="" />
+                    <input class="boton" type="submit" value="IR" />
+                  </fieldset>
+                </form>
+              </div>
+              <div class="fila3header">
+                <nav>
+                    <ul>
+                        <li><a href="#">Web Products</a></li>
+                        <li><a href="#">Product Management</a></li>
+                        <li><a href="#">Online Advertising</a></li>
+                        <li><a href="#">Web Marketing</a></li>
+                        <li><a href="#">Client Support</a></li>
+                        <li><a href="#">Internet Culture</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">SEO</a></li>
+                        <li><a href="#">Information Security</a></li>
+                    </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
         </div>
-        
-</nav>
+      </header>
+      <div class="disclaimer">
 
-    </header>
+        <p>
+            Instant update for you: March 10th 2025: After 2 months and 1,500,000 visitors, I've found THE job! Thank you! More info here. I'm also on twitter.
+            See the original product page.
+            </p>
 
-    <section>
-        <img class="retrato" src=".\images\photo_phil.jpg" alt="Esta es mi foto">
-
-
-
-
-
-        <div class="estrellas">
-            <i class="fas fa-star"></i> <!-- Estrella llena -->
-            <i class="fas fa-star"></i> <!-- Estrella llena -->
-            <i class="fas fa-star"></i> <!-- Estrella llena -->
-            <i class="fas fa-star-half-alt"></i> <!-- Estrella media llena -->
-            <i class="far fa-star"></i> <!-- Estrella vacía -->
-
-
+      </div>
+      <content>
+        <div class="contenedor-imagen">
+          <div class="galeria">
+            <img src=".\images\INDI1.jpg" alt="Imagen 1" onclick="seleccionarImagen(this)">
+            <img src=".\images\INDI2.jpg" alt="Imagen 2" onclick="seleccionarImagen(this)">
+            <img src=".\images\DECKARD1.jpg" alt="Imagen 3" onclick="seleccionarImagen(this)">
+            <img src=".\images\photo_phil.jpg" alt="Imagen 4" onclick="seleccionarImagen(this)">
+          </div>
+          <div class="imagen-seleccionada">
+            <img id="imagen-grande" src=".\images\INDI2.jpg" alt="Imagen Seleccionada">
+            <div class="contenido-perfil">
+              <h1 class="nombre">Daniel Sanchez Aránega, Web Product Manager</h1>
+              <a class="creador2">por</a>
+              <a class="creador" href="#">Dani Sanchez</a>
+              <div class="rating">
+                <span class="star full">★</span>
+                <span class="star full">★</span>
+                <span class="star full">★</span>
+                <span class="star half">★</span>
+                <span class="star empty">★</span>
+              </div>
+            </div>
+          </div>
         </div>
-
-
-    </section>
+        <script>
+          function seleccionarImagen(elemento) {
+            const imagenGrande = document.getElementById("imagen-grande");
+            imagenGrande.src = elemento.src;
+          }
+        </script>
+      </content>
+      
 </body>
 </html>
