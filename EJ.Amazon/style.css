@@ -1,0 +1,430 @@
+
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+
+.header-contenedores {
+    display: flex;
+    background: linear-gradient(rgb(255, 255, 255), rgb(222, 219, 219)); 
+    border-radius: 10px;
+    align-items: center; /* Centra verticalmente la imagen respecto a las filas */
+  }
+
+  .header-filas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Espacio entre la imagen y las filas */
+  }
+
+.boton{
+    background-color: rgb(51, 82, 153);
+    font-style: italic;
+    color:white;
+
+  }
+
+  nav{
+
+    background-color: transparent;
+
+  }
+
+
+/* 💻 Escritorio (1024px o más) */
+@media (min-width: 1024px) {
+
+    nav {
+        
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    ul {
+        
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    li a {
+        font-family: 'Amazon Ember', sans-serif;
+        text-decoration: none;
+        color: black;
+        font-weight: normal;
+        transition: color 0.3s;
+    }
+
+    li a:hover {
+        color: gray;
+    }
+
+    li:first-child a {
+        font-weight: bold;
+    }
+
+    
+.cuadrobusq{
+
+    width: 500px;
+    height: 35px;
+    border-color:orange;
+  }
+
+    .boton{
+
+
+        width: 80px;
+        height: 40px;
+    }
+    .imglogo {
+        max-width: 200px; /* Ajusta según tu necesidad */
+        margin-top: 20px;
+        margin-left: 10px;
+      }
+
+  .links{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size:large;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Amazon Ember', sans-serif;
+    /* font-family: 'Amazon Ember Cd RC', sans-serif;
+    font-family: 'Amazon Ember Display', sans-serif;
+    font-family: 'Amazon Ember Duospace', sans-serif;
+    font-family: 'Amazon Ember Mono', sans-serif;
+    font-family: 'Amazon Ember V2', sans-serif; */
+
+   
+
+  }
+
+  .cajabuscar
+  {
+
+
+
+  }
+fieldset{
+
+    border: none;
+}
+
+.disclaimer{
+
+    font-family: 'Amazon Ember', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    height: 50px;
+    margin-bottom: 12px;
+    font-size: large;
+}
+
+.contenedor-imagen {
+    display: flex;
+    align-items: flex-start; /* Alinea verticalmente los elementos según necesites */
+    gap: 20px; /* Espacio entre la galería y la imagen seleccionada */
+}
+
+
+.galeria {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: inline-grid;
+}
+
+.galeria img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+    border: 2px solid transparent;
+  
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
+}
+
+.imagen-seleccionada {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 400px;
+    display: flex;
+}
+
+.imagen-seleccionada img {
+    max-width: 430px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.nombre{
+    font-family: 'Amazon Ember', sans-serif;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 27px;
+    text-wrap-mode: nowrap;
+
+
+}
+
+.creador{
+
+margin-left: 5px;
+}
+
+.creador2{
+
+    margin-left: 32px;
+}
+
+
+/* Estilo base para las estrellas */
+.rating {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  /* Estrellas */
+  .star {
+    font-size: 30px;
+    padding: 0 5px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  /* Estrella llena */
+  .star.full {
+    color: gold;
+  }
+  
+  /* Estrella medio rellena */
+  .star.half {
+    color: gold;
+    background: linear-gradient(to right, gold 50%, #ddd 50%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Estrella vacía */
+  .star.empty {
+    color: #ddd;
+  }
+  
+}
+
+
+
+/* 📏 Tablet (768px o más) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+nav {
+        
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+li a {
+    font-family: 'Amazon Ember', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    transition: color 0.3s;
+}
+
+li a:hover {
+    color: gray;
+}
+
+li:first-child a {
+    font-weight: bold;
+}
+
+
+.cuadrobusq{
+
+width: 500px;
+height: 35px;
+border-color:orange;
+}
+
+.boton{
+
+
+    width: 80px;
+    height: 40px;
+}
+.imglogo {
+    max-width: 200px; /* Ajusta según tu necesidad */
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+.links{
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 15px;
+font-size:large;
+color: #000000;
+font-weight: bold;
+font-family: 'Amazon Ember', sans-serif;
+/* font-family: 'Amazon Ember Cd RC', sans-serif;
+font-family: 'Amazon Ember Display', sans-serif;
+font-family: 'Amazon Ember Duospace', sans-serif;
+font-family: 'Amazon Ember Mono', sans-serif;
+font-family: 'Amazon Ember V2', sans-serif; */
+
+
+
+}
+
+.cajabuscar
+{
+
+
+
+}
+fieldset{
+
+border: none;
+}
+
+.disclaimer{
+
+font-family: 'Amazon Ember', sans-serif;
+display: flex;
+justify-content: center;
+background-color: beige;
+height: 50px;
+margin-bottom: 12px;
+font-size: large;
+}
+
+.contenedor-imagen {
+display: flex;
+align-items: flex-start; /* Alinea verticalmente los elementos según necesites */
+gap: 20px; /* Espacio entre la galería y la imagen seleccionada */
+}
+
+
+.galeria {
+display: flex;
+gap: 10px;
+padding: 10px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+display: inline-grid;
+}
+
+.galeria img {
+width: 100px;
+height: 100px;
+object-fit: cover;
+cursor: pointer;
+transition: transform 0.3s, border 0.3s;
+border: 2px solid transparent;
+
+}
+
+.galeria img:hover {
+transform: scale(1.05);
+border-color: #007bff;
+}
+
+.imagen-seleccionada {
+margin-top: 20px;
+margin-left: 10px;
+width: 400px;
+display: flex;
+}
+
+.imagen-seleccionada img {
+max-width: 430px;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.nombre{
+font-family: 'Amazon Ember', sans-serif;
+margin-left: 30px;
+margin-top: 0px;
+margin-bottom: 5px;
+font-size: 17px;
+text-wrap-mode: nowrap;
+
+
+}
+
+.creador{
+
+margin-left: 5px;
+}
+
+.creador2{
+
+margin-left: 32px;
+}
+
+
+/* Estilo base para las estrellas */
+.rating {
+display: flex;
+margin-left: 20px;
+}
+
+/* Estrellas */
+.star {
+font-size: 30px;
+padding: 0 5px;
+display: inline-block;
+position: relative;
+}
+
+/* Estrella llena */
+.star.full {
+color: gold;
+}
+
+/* Estrella medio rellena */
+.star.half {
+color: gold;
+background: linear-gradient(to right, gold 50%, #ddd 50%);
+-webkit-background-clip: text;
+color: transparent;
+}
+
+/* Estrella vacía */
+.star.empty {
+color: #ddd;
+}
+
+}
+
+
+
+/* 📱 Móvil (hasta 767px) */
+@media (max-width: 767px) { 
+}
