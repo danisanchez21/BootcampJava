@@ -1,80 +1,134 @@
-@media (min-width:100px){
+.contenedor-footer {
+  background-color: #e3e3e3;
+  margin-top: 10px;
+}
 
-.header1{
-    height: 100px;
+.contenedor-header {
+  background-color: #fea432;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.contenedor-section {
+  background-color: #dbec00;
+  padding: 10px;
+}
+
+.contenedor-article {
+  background-color: #4a89d0;
+  padding: 10px;
+}
+
+/* 📱 Móvil (hasta 767px) */
+@media (max-width: 767px) {
+  .wrapper-footer .contenedor-footer {
+    display: none; /* Ocultar todos los contenedores footer dentro del wrapper */
+  }
+  .wrapper-footer .contenedor-footer:first-child {
+    display: block; /* Mostrar solo el primer contenedor */
+  }
+  .contenedor-footer {
     width: 100%;
-    background-color: #FEA432;
-    margin-bottom: 10px;
-}
-.header2{
+    height: 33px;
+  }
+
+  .contenedor-header {
+    width: 97%;
+    height: 33px;
+  }
+
+  .wrapper-article {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas en pantallas grandes */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Dos columnas */
+    grid-template-rows: repeat(3, 1fr); /* Dos filas */
+    gap: 10px; /* Espacio entre los divs */
+    margin-top: 10px;
+  }
+
+  .contenedor-article {
+    width: 97%;
+    height: 200px;
+  }
+
+  .contenedor-section {
+    width: 98%;
     height: 100px;
+  }
+}
+
+/*  Tablets (768px o más) */
+@media (min-width: 768px) {
+  .wrapper-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 10px;
+  }
+  .contenedor-footer {
     width: 100%;
-    background-color: #FEA432;
-    margin-bottom: 10px;
+    height: 60px;
+  }
+
+  .contenedor-header {
+    width: 98%;
+    height: 60px;
+  }
+
+  .wrapper-article {
+    grid-template-columns: 1fr; /* 3 columnas en pantallas grandes */
+    display: grid;
+    gap: 10px; /* Espacio entre los divs */
+    margin-top: 10px;
+  }
+
+  .contenedor-article {
+    width: 98%;
+    height: 50px;
+  }
+  .contenedor-section {
+    width: 98%;
+    height: 200px;
+  }
 }
 
-.section1{
+/* 💻 Escritorio  */
+@media (min-width: 1024px) {
+  .wrapper-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre los divs */
+    margin-right: 10px;
+  }
+  .contenedor-footer {
+    height: 250px;
+  }
+
+  .wrapper-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 columnas */
+    gap: 30px; /* Espacio entre los divs */
+    margin-right: 10px;
+  }
+  .contenedor-header {
     height: 100px;
-    width: 100%;
-    background-color: #DBEC00;
-    margin-bottom: 10px;
+    width: 98%;
+  }
+
+  .wrapper-article {
+    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas en pantallas grandes */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+    gap: 20px; /* Espacio entre los divs */
+    margin-top: 10px;
+  }
+
+  .contenedor-article {
+    width: 95%;
+    height: 200px;
+  }
+
+  .contenedor-section {
+    width: 98%;
+    height: 300px;
+  }
 }
-
-.aside1{
-    height: 100px;
-    width: 100%;
-    background-color: #4A89D0;
-    margin-bottom: 10px;
-}
-
-.footer-item {
-    background: #E3E3E3;
-    height: 100px;
-    padding: 10px;
-    text-align: center;
-    float: left;
-    width: 100%; /* Cuatro columnas en pantallas grandes */
-    box-sizing: border-box; /* Para que el padding no afecte el ancho */
-    margin-bottom: 10px;
-}
-  
-  /* Para tablets: 2 columnas */
-  @media (max-width: 768px) {
-    .footer-item {
-      width: 50%; /* Se acomodan en 2 columnas */
-    }
-    .section1{
-
-      height: 550px;
-  }
-  }
-  
-  /* Para móviles: 1 columna */
-  @media (max-width: 480px) {
-    .footer-item {
-      width: 20%; /* Se apilan en una sola columna */
-    }
-    .aside1{
-
-        width: 80%;
-    }
-  }
-  .section1{
-
-      height: 100px;
-  }
-    
-  }
-
-    @media (max-width: 480px) {
-    .footer-item {
-      width: 20%; /* Se apilan en una sola columna */
-    }
-    .aside1{
-
-        width: 80%;
-    }
-  }
-
-
-
