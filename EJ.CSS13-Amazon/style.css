@@ -38,6 +38,33 @@ font-family: 'Amazon Ember V2', sans-serif; */
 /* 💻 Escritorio (1024px o más) */
 @media (min-width: 1024px) {
 
+  .menu-btn {
+    display: none;
+  }
+  .menu-toggle{
+
+    display: none;
+  }
+
+.a2 {
+    color: #0073bb;
+    text-decoration: none;
+  
+}
+.a2:hover {
+    text-decoration: underline;
+}
+
+.p2{
+
+  margin-left: 30px;
+
+}
+
+.h3-2{
+  margin-left: 30px;
+
+  }
     nav {
         
         padding: 10px 20px;
@@ -85,8 +112,8 @@ font-family: 'Amazon Ember V2', sans-serif; */
         height: 40px;
     }
     .imglogo {
-        max-width: 200px; /* Ajusta según tu necesidad */
-        margin-top: 20px;
+        max-width: 200px; 
+        /* margin-top: 20px; */
         margin-left: 10px;
       }
 
@@ -104,16 +131,17 @@ font-family: 'Amazon Ember V2', sans-serif; */
     font-family: 'Amazon Ember Mono', sans-serif;
     font-family: 'Amazon Ember V2', sans-serif; */
 
-   
-
-  }
-
-  .cajabuscar
-  {
-
 
 
   }
+
+  .updatemsg{
+
+color: orangered;
+
+  }
+
+  
 fieldset{
 
     border: none;
@@ -132,7 +160,7 @@ fieldset{
 
 .contenedor-imagen {
     display: flex;
-    align-items: flex-start; /* Alinea verticalmente los elementos según necesites */
+    align-items: anchor-center; 
     gap: 20px; /* Espacio entre la galería y la imagen seleccionada */
 }
 
@@ -183,18 +211,18 @@ fieldset{
     font-size: 27px;
     text-wrap-mode: nowrap;
 
-   
+
 }
 
 .creador{
 
-   margin-left: 5px;
+margin-left: 5px;
 }
 
 .creador2{
 
     margin-left: 32px;
- }
+}
 
 
 /* Estilo base para las estrellas */
@@ -228,11 +256,33 @@ fieldset{
   .star.empty {
     color: #ddd;
   }
-  
+
+  .unavailable {
+    color: red;
+    font-weight: bold;
+    font-family: 'Amazon Ember', sans-serif;
+    margin-left: 30px;
+}
+.ul2 {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-family: 'Amazon Ember', sans-serif;
+    margin-left: 30px;
+    display: grid;
 }
 
+.h3-2{
+  font-family: 'Amazon Ember', sans-serif;
+}
+.p2{
+  font-family: 'Amazon Ember', sans-serif;
+}
 
+.a2{
+  font-family: 'Amazon Ember', sans-serif;
 
+}
+}
 /* 📏 Tablet (768px o más) */
 @media (min-width: 768px) and (max-width: 1023px) {
 
@@ -299,12 +349,6 @@ font-family: 'Amazon Ember', sans-serif;
 
 }
 
-.cajabuscar
-{
-
-
-
-}
 fieldset{
 
 border: none;
@@ -426,4 +470,517 @@ color: #ddd;
 
 /* 📱 Móvil (hasta 767px) */
 @media (max-width: 767px) { 
+
+  
+.header-contenedores {
+  display: flex;
+  background: linear-gradient(rgb(255, 255, 255), rgb(222, 219, 219)); 
+  border-radius: 10px;
+  align-items: center; /* Centra verticalmente la imagen respecto a las filas */
 }
+
+.header-filas {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Espacio entre la imagen y las filas */
+}
+
+.boton{
+  background-color: rgb(51, 82, 153);
+  font-style: italic;
+  color:white;
+
+}
+
+nav{
+
+  background-color: transparent;
+
+}
+
+body{
+
+display: grid;
+
+
+}
+
+  /* mobile.css */
+
+/* Aseguramos que el nav tenga posición relativa para el menú desplegable */
+.fila3header nav {
+  position: relative;
+}
+
+/* Estilos para el botón hamburguesa */
+.fila3header nav .menu-btn {
+  display: block;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333; /* Ajusta el color según tu diseño */
+  padding: 10px;
+}
+
+/* Ocultamos el checkbox real */
+.fila3header nav input.menu-toggle {
+  display: none;
+}
+
+/* Menú móvil: inicialmente oculto y en columna */
+.fila3header nav ul.mobile-menu {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff; /* Cambia según tu diseño */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Opcional: estilo para cada item del menú */
+.fila3header nav ul.mobile-menu li {
+  border-bottom: 1px solid #ddd;
+}
+
+.fila3header nav ul.mobile-menu li a {
+  display: block;
+  padding: 10px;
+  color: #333; /* Ajusta según necesidad */
+  text-decoration: none;
+}
+
+/* Cuando el checkbox está activado, mostramos el menú */
+.fila3header nav input.menu-toggle:checked ~ ul.mobile-menu {
+  display: flex;
+}
+/* ------------------------------------------------------ */
+
+
+.a2 {
+  color: #0073bb;
+  text-decoration: none;
+
+}
+.a2:hover {
+  text-decoration: underline;
+}
+
+.p2{
+
+margin-left: 30px;
+
+}
+
+.h3-2{
+margin-left: 30px;
+
+}
+  /* nav {
+      
+      padding: 10px 20px;
+      border-bottom: 1px solid #ddd;
+  } */
+
+  ul {
+      
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      /* gap: 20px; */
+      width: 200px;
+      align-items: center;
+  }
+
+  li a {
+      font-family: 'Amazon Ember', sans-serif;
+      text-decoration: none;
+      color: black;
+      font-weight: normal;
+      transition: color 0.3s;
+  }
+
+  li a:hover {
+      color: gray;
+  }
+
+  li:first-child a {
+      font-weight: bold;
+  }
+
+  
+.cuadrobusq{
+
+  width: 500px;
+  height: 35px;
+  border-color:orange;
+}
+
+  .boton{
+
+
+      width: 80px;
+      height: 40px;
+  }
+  .imglogo {
+      max-width: 200px; 
+      /* margin-top: 20px; */
+      margin-left: 10px;
+    }
+
+.links{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  font-size:large;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Amazon Ember', sans-serif;
+  /* font-family: 'Amazon Ember Cd RC', sans-serif;
+  font-family: 'Amazon Ember Display', sans-serif;
+  font-family: 'Amazon Ember Duospace', sans-serif;
+  font-family: 'Amazon Ember Mono', sans-serif;
+  font-family: 'Amazon Ember V2', sans-serif; */
+
+
+
+}
+
+.updatemsg{
+
+color: orangered;
+
+}
+
+
+fieldset{
+
+  border: none;
+}
+
+.disclaimer{
+
+  font-family: 'Amazon Ember', sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+  height: 50px;
+  margin-bottom: 12px;
+  font-size: large;
+}
+
+.contenedor-imagen {
+  display: inline-grid;
+  align-items: anchor-center; 
+  gap: 20px; /* Espacio entre la galería y la imagen seleccionada */
+}
+
+
+.galeria {
+  gap: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: inline-block;
+  grid-row: none;
+}
+
+.galeria img {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s, border 0.3s;
+  border: 2px solid transparent;
+
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  border-color: #007bff;
+}
+
+.imagen-seleccionada {
+  margin-top: 20px;
+  margin-left: 10px;
+  width: 400px;
+  display: flex;
+}
+
+.imagen-seleccionada img {
+  max-width: 430px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.nombre{
+  font-family: 'Amazon Ember', sans-serif;
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-size: 27px;
+  text-wrap-mode: nowrap;
+
+
+}
+
+.creador{
+
+margin-left: 5px;
+}
+
+.creador2{
+
+  margin-left: 32px;
+}
+
+
+/* Estilo base para las estrellas */
+.rating {
+  display: flex;
+  margin-left: 20px;
+}
+
+/* Estrellas */
+.star {
+  font-size: 30px;
+  padding: 0 5px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Estrella llena */
+.star.full {
+  color: gold;
+}
+
+/* Estrella medio rellena */
+.star.half {
+  color: gold;
+  background: linear-gradient(to right, gold 50%, #ddd 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Estrella vacía */
+.star.empty {
+  color: #ddd;
+}
+
+.unavailable {
+  color: red;
+  font-weight: bold;
+  font-family: 'Amazon Ember', sans-serif;
+  margin-left: 30px;
+}
+.ul2 {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: 'Amazon Ember', sans-serif;
+  margin-left: 30px;
+  display: grid;
+}
+
+.h3-2{
+font-family: 'Amazon Ember', sans-serif;
+}
+.p2{
+font-family: 'Amazon Ember', sans-serif;
+}
+
+.a2{
+font-family: 'Amazon Ember', sans-serif;
+
+}
+
+/* 📏 Tablet (768px o más) */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+nav {
+      
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+li a {
+  font-family: 'Amazon Ember', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: normal;
+  transition: color 0.3s;
+}
+
+li a:hover {
+  color: gray;
+}
+
+li:first-child a {
+  font-weight: bold;
+}
+
+
+.cuadrobusq{
+
+width: 500px;
+height: 35px;
+border-color:orange;
+}
+
+.boton{
+
+
+  width: 80px;
+  height: 40px;
+}
+.imglogo {
+  max-width: 200px; /* Ajusta según tu necesidad */
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.links{
+margin-top: 10px;
+margin-bottom: 10px;
+margin-left: 15px;
+font-size:large;
+color: #000000;
+font-weight: bold;
+font-family: 'Amazon Ember', sans-serif;
+
+}
+
+fieldset{
+
+border: none;
+}
+
+.disclaimer{
+
+font-family: 'Amazon Ember', sans-serif;
+display: flex;
+justify-content: center;
+background-color: beige;
+height: 50px;
+margin-bottom: 12px;
+font-size: large;
+}
+
+.contenedor-imagen {
+display: flex;
+align-items: flex-start; /* Alinea verticalmente los elementos según necesites */
+gap: 20px; /* Espacio entre la galería y la imagen seleccionada */
+}
+
+
+.galeria {
+display: flex;
+gap: 10px;
+padding: 10px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+display: inline-grid;
+}
+
+.galeria img {
+width: 100px;
+height: 100px;
+object-fit: cover;
+cursor: pointer;
+transition: transform 0.3s, border 0.3s;
+border: 2px solid transparent;
+
+}
+
+.galeria img:hover {
+transform: scale(1.05);
+border-color: #007bff;
+}
+
+.imagen-seleccionada {
+margin-top: 20px;
+margin-left: 10px;
+width: 400px;
+display: flex;
+}
+
+.imagen-seleccionada img {
+max-width: 430px;
+border-radius: 8px;
+box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.nombre{
+font-family: 'Amazon Ember', sans-serif;
+margin-left: 30px;
+margin-top: 0px;
+margin-bottom: 5px;
+font-size: 17px;
+text-wrap-mode: nowrap;
+
+
+}
+
+.creador{
+
+margin-left: 5px;
+}
+
+.creador2{
+
+margin-left: 32px;
+}
+
+
+/* Estilo base para las estrellas */
+.rating {
+display: flex;
+margin-left: 20px;
+}
+
+/* Estrellas */
+.star {
+font-size: 30px;
+padding: 0 5px;
+display: inline-block;
+position: relative;
+}
+
+/* Estrella llena */
+.star.full {
+color: gold;
+}
+
+/* Estrella medio rellena */
+.star.half {
+color: gold;
+background: linear-gradient(to right, gold 50%, #ddd 50%);
+-webkit-background-clip: text;
+color: transparent;
+}
+
+/* Estrella vacía */
+.star.empty {
+color: #ddd;
+}
+
+
+
+}}

@@ -10,7 +10,7 @@ body {
 
 /* 💻 Escritorio y Tablets (768px o más) */
 @media (min-width: 768px) {
-      
+
 .buttondiv{
 
     display: flex;
@@ -55,7 +55,7 @@ body {
                     background-color: white;
                     border-radius: 40px;
                     border-color: transparent;
-               
+
                     
                         }
 

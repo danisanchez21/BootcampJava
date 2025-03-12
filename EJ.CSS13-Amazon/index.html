@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="header-contenedores">
-          <img class="imglogo" src="./images/Amazon_logo.svg" alt="Logo Amazon">
+          <img class="imglogo" src="./images/DaniLogoTransparent.png" alt="Logo Amazon">
           <div class="header-filas">
             <div class="fila1header">
               <div class="links">
@@ -30,19 +30,23 @@
               </div>
               <div class="fila3header">
                 <nav>
-                    <ul>
-                        <li><a href="#">Web Products</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Online Advertising</a></li>
-                        <li><a href="#">Web Marketing</a></li>
-                        <li><a href="#">Client Support</a></li>
-                        <li><a href="#">Internet Culture</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">SEO</a></li>
-                        <li><a href="#">Information Security</a></li>
-                    </ul>
+                  <!-- Checkbox oculto para el toggle -->
+                  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                  <!-- Botón hamburguesa: al hacer clic, se activa el checkbox -->
+                  <label for="menu-toggle" class="menu-btn">☰</label>
+                  <ul class="mobile-menu">
+                    <li><a href="#">Web Products</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Online Advertising</a></li>
+                    <li><a href="#">Web Marketing</a></li>
+                    <li><a href="#">Client Support</a></li>
+                    <li><a href="#">Internet Culture</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">SEO</a></li>
+                    <li><a href="#">Information Security</a></li>
+                  </ul>
                 </nav>
-              </div>
+              </div>              
             </div>
           </div>
         </div>
@@ -50,7 +54,7 @@
       <div class="disclaimer">
 
         <p>
-            Instant update for you: March 10th 2025: After 2 months and 1,500,000 visitors, I've found THE job! Thank you! More info here. I'm also on twitter.
+            <a class="updatemsg">Instant update for you: </a>March 10th 2025: After 2 months and 1,500,000 visitors, I've found THE job! Thank you! More info here. I'm also on twitter.
             See the original product page.
             </p>
 
@@ -58,13 +62,13 @@
       <content>
         <div class="contenedor-imagen">
           <div class="galeria">
-            <img src=".\images\INDI1.jpg" alt="Imagen 1" onclick="seleccionarImagen(this)">
-            <img src=".\images\INDI2.jpg" alt="Imagen 2" onclick="seleccionarImagen(this)">
-            <img src=".\images\DECKARD1.jpg" alt="Imagen 3" onclick="seleccionarImagen(this)">
-            <img src=".\images\photo_phil.jpg" alt="Imagen 4" onclick="seleccionarImagen(this)">
+            <img src=".\images\IMG-20250312-WA0002.jpg" alt="Imagen 1" onclick="seleccionarImagen(this)">
+            <img src=".\images\IMG-20250312-WA0003.jpg" alt="Imagen 2" onclick="seleccionarImagen(this)">
+            <img src=".\images\IMG-20250312-WA0004.jpg" alt="Imagen 3" onclick="seleccionarImagen(this)">
+            <img src=".\images\IMG-20250312-WA0005.jpg" alt="Imagen 4" onclick="seleccionarImagen(this)">
           </div>
           <div class="imagen-seleccionada">
-            <img id="imagen-grande" src=".\images\INDI2.jpg" alt="Imagen Seleccionada">
+            <img id="imagen-grande" src=".\images\IMG-20250312-WA0005.jpg" alt="Imagen Seleccionada">
             <div class="contenido-perfil">
               <h1 class="nombre">Daniel Sanchez Aránega, Web Product Manager</h1>
               <a class="creador2">por</a>
@@ -76,6 +80,20 @@
                 <span class="star half">★</span>
                 <span class="star empty">★</span>
               </div>
+
+              <p class="unavailable">Currently unavailable.<br>We don't know when or if this item will be back in stock.</p>
+        <ul class="ul2">
+            <li>Dual competence: technical-management</li>
+            <li>5+ years working on web products</li>
+            <li>Entrepreneurial mindset</li>
+            <li>"Strong Generalist"</li>
+            <li>Trilingual EN/FR/ES</li>
+        </ul>
+
+        <h3 class="h3-2">Take a Trip with Dani</h3>
+        <p class="p2">Visit the <a href="#">Avocado Travel blog</a> (FR) for our full selection of 
+        <a class="a2" href="#">Japan</a>, <a href="#">Thailand</a>, <a href="#">Airlines</a> articles and much more. 
+        <a class="a2" href="#">Travel now.</a></p>
             </div>
           </div>
         </div>
