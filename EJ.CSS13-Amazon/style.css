@@ -808,15 +808,14 @@ margin-left: 5px;
 
   }
   .creador {
-   
+    margin-left: 5px;
     display: flex;
     place-content: center;
-    
   }
   .creador2 {
-    display: flex;
+    margin-left: 0;
+     display: flex;
     place-content: center;
-    margin-bottom: 0.3em;
   }
   
   /* Estrellas */
