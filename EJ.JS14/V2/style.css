@@ -1,19 +1,18 @@
 body {
     font-family: Arial, sans-serif;
     text-align: left;
-    display: flex;
-    justify-content: center; 
-    display: inline-grid;
-    background-color: #e070e8;
+    background-color: #021b34;
 }
 
 .container {
     border: 2px solid #8BC34A;
     padding: 10px;
     background: white;
-    display: inline-block;
     margin-bottom: 5px;
+    width: 50vh;
 }
+
+
 
 h3 {
     margin: 5px 0;

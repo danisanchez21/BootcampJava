@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #dfbdbd;
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,11 +9,26 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+.player-text{
+    color: blue;
 
+
+}
+
+.player-text2{
+    color: rgb(255, 0, 0);
+
+
+}
 h1 {
     text-align: center;
     margin-top: 20px;
     color: #333;
+}
+
+h2{
+
+    margin-bottom: 30px;
 }
 
 
@@ -33,11 +48,52 @@ button:hover {
     background-color: #007bff;
     color: #fff;
 }
+.botonesContenedor {
+    position: absolute; /* Se mantiene en su lugar inicialmente */
+    left: 50%; /* Centrado inicialmente */
+    transform: translateX(-50%);
+    top: 2em;
+    display: flex;
+    gap: 10px;
+    transition: all 0.3s ease; /* Suaviza el cambio de posición */
+}
+
+/* Cuando el scroll es suficiente, los botones se alinean a la derecha */
+.botonesContenedor.sticky {
+    position: fixed; /* Se fija en la pantalla */
+    right: 20px; /* Se mueve a la derecha */
+    top: 50%; /* Centrado en la pantalla */
+    transform: translateY(-50%); /* Centrado verticalmente */
+    width: 22vh;
+    flex-direction: column; /* Apila los botones verticalmente */
+    align-items: flex-end; /* Alinea los botones a la derecha */
+    left:auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
 
 
-#gameResult {
+/* Animación para resaltar la última tirada */
+@keyframes highlightFade {
+    0% {
+        background-color: rgba(0, 255, 0, 0.7); /* Verde fuerte al inicio */
+    }
+    100% {
+        background-color: transparent; /* Se desvanece a transparente */
+    }
+}
+
+.roundResult.highlight {
+    animation: highlightFade 3s ease-in-out;
+}
+
+
+#resultadoTirada {
     margin: 20px;
-    padding: 20px;
+    /* padding: 20px; */
     background-color: #fff;
     border: 2px solid #007bff;
     border-radius: 5px;
@@ -51,19 +107,20 @@ button:hover {
 }
 
 /* Puntajes */
-#score {
+#puntuacion {
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 20px;
+    padding-bottom: 25px;
+
 }
 
-#finalResult {
+#resultadoFinal {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 30px;
     color: #007bff;
+    margin-top: 0px;
 }
 
 .roundResult {
@@ -74,7 +131,7 @@ button:hover {
     margin: 5px 0;
 }
 
-.playerChoice, .computerChoice {
+.opcionJugador, .opcionPC {
     font-weight: bold;
 }
 

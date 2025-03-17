@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Arrays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Add Item</h3>
+        <button onclick="pushItem()">push</button>
+        <button onclick="unshiftItem()">unshift</button>
+        <button onclick="insertAt()">insert at</button>
+        <input type="number" id="insertIndex" min="0" value="0" step="1">
+        
+    </div>
+
+    <div class="container">
+        <h3>Remove Item</h3>
+        <button onclick="popItem()">pop</button>
+        <button onclick="shiftItem()">shift</button>
+        <button onclick="removeAt()">remove at</button>
+        <input type="number" id="removeIndex" min="0" value="0">
+    </div>
+
+<div class="resultado">
+    <h3 class="h3white">Array:</h3>
+    <p id="output">[]</p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
