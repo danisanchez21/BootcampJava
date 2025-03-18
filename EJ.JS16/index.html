@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -7,17 +7,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>¡Juego Piedra, Papel o Tijera!</h1>
-    <div class="botonesContenedor" style="text-align:center;">
+    <h1 id="h1Text">¡Juego Piedra, Papel o Tijera!</h1>
+
+    <div class="botonesContenedor">
         <button onclick="play('piedra')">🥊 Piedra</button>
         <button onclick="play('papel')">🖐 Papel</button>
         <button onclick="play('tijera')">✂️ Tijera</button>
+        <button id="modoJuego" onclick="toggleMode()">Modo: Mejor de 3</button>
+        <button id="finalizarBtn" onclick="endGame()">Finalizar partida</button>
+
+    </div>
+
+    <button id="reiniciarBtn" onclick="reiniciarJuego()" class="oculto">Reiniciar Juego</button>
+
+    <div id="resultadoTirada"></div>
+    <div id="puntuacion"></div>
+
+    <div id="resultadoFinalContenedor">
+    <div id="resultadoFinal"></div>
     </div>
 
     <script src="main.js"></script>
-
-    <h2 id="resultadoTirada"></h2>
-    <h3 id="puntuacion"></h3>
-    <h3 id="resultadoFinal"></h3>
 </body>
 </html>
