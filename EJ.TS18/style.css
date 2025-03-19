@@ -1,40 +1,60 @@
 html, body {
-    height: 100%; }
-
-#tamagochiBot{
-
-    width: 10%;
-
-}
-
-.contenedor{
-    display: grid;
+    height: 100%;
+    margin: 0;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tamagochi-contenedor{
+
+    position: absolute;
+    top: 55%; /* Ajusta la posición vertical */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el Tamagochi */
+    width: 15%; /* Ajusta el tamaño */
+    z-index: 2; /* Lo coloca encima de los demás elementos */
+    background-color: aqua;
+
+}
+
+.texto-tamagochi{
+
+top: 35%;
 
 
 }
 
-.EAT{
 
-    background-color: #B8FBB6;
-    width: 500px;
-
+#tamagochiBot {
+    position: absolute;
+    top: 45%; /* Ajusta la posición vertical */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el Tamagochi */
+    width: 100%; /* Ajusta el tamaño */
+    z-index: 1; /* Lo coloca encima de los demás elementos */
 }
 
-.PLAY{
-    background-color: #FFFD96;
-    width: 500px;
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    grid-template-rows: 1fr 1fr; /* Dos filas iguales */
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+    width: 100vw; /* Ocupar toda la anchura de la pantalla */
 }
 
-.FIGHT{
+.EAT { background-color: #B8FBB6; }
+.PLAY { background-color: #FFFD96; }
+.FIGHT { background-color: #FE9798; }
+.SLEEP { background-color: #87CEEA; }
 
-    background-color: #FE9798;
-    width: 500px;
+.EAT, .PLAY, .FIGHT, .SLEEP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    width: 100%;
+    height: 100%;
 }
-
-.SLEEP{
-
-    background-color: #87CEEA;
-    width: 500px;
-}
-
