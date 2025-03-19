@@ -1,0 +1,40 @@
+html, body {
+    height: 100%; }
+
+#tamagochiBot{
+
+    width: 10%;
+
+}
+
+.contenedor{
+    display: grid;
+    justify-content: center;
+
+
+}
+
+.EAT{
+
+    background-color: #B8FBB6;
+    width: 500px;
+
+}
+
+.PLAY{
+    background-color: #FFFD96;
+    width: 500px;
+}
+
+.FIGHT{
+
+    background-color: #FE9798;
+    width: 500px;
+}
+
+.SLEEP{
+
+    background-color: #87CEEA;
+    width: 500px;
+}
+
