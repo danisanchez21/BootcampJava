@@ -10,7 +10,7 @@ const encendidoBtn ="./images/bon.jpg";
 const apagadaBomb  ="./images/off.jpg";
 const encendidaBomb  ="./images/on.jpg";
 
-let estadoEncendido = false;
+let estadoEncendido: boolean = false;
 
 interruptor.addEventListener("click",()=>{
 
@@ -28,6 +28,12 @@ interruptor.addEventListener("click",()=>{
         bombilla.src = apagadaBomb;
     }
 });
+let rotacion: number = 0;
+bombilla.addEventListener("click",()=>{
+    rotacion+= 45;
+bombilla.style.transform= `rotate(${rotacion}deg)`;
 
+
+})
 
 });

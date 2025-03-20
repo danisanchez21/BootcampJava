@@ -23,4 +23,9 @@ document.addEventListener("DOMContentLoaded", () => {
             bombilla.src = apagadaBomb;
         }
     });
+    let rotacion = 0;
+    bombilla.addEventListener("click", () => {
+        rotacion += 45;
+        bombilla.style.transform = `rotate(${rotacion}deg)`;
+    });
 });
