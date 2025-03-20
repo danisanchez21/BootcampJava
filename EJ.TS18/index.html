@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bombilla con Slider</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img id="interruptor" src="./images/boff.jpg">
-    <img id="bombilla" src="./images/off.jpg">
+
+    <div class="contenedorBoton">
+        <img id="interruptor" src="./images/boff.jpg">
+    </div>
+
+    <div class="contenedorIzquierda">
+        <img id="bombilla" src="./images/off.jpg">
+    </div>
+
+    <div class="contenedorSlider">
+        <label for="brillo">Potencia Lumínica</label> 
+        <input type="range" id="brillo" min="0" max="2" step="0.01" value="1">
+    </div>
+
     <script src="./javascript/main.js"></script>
 </body>
 </html>

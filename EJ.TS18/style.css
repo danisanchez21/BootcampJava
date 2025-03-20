@@ -1,19 +1,49 @@
-#interruptor{
-
-width: 100px;
-
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    grid-template-columns: 7% 40%;  /* Primera columna más estrecha, segunda más ancha */
+    grid-template-rows: 1fr;
+    height: 100vh; /* Ocupar toda la pantalla */
 }
 
-#bombilla{
-
-width: 300px;
-transition: transform 0.3s ease-in-out; /* Animación suave */
+.contenedorIzquierda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    position: relative; 
 }
 
-body{
-
-display: grid;
-background-color: #000000;
-
+#interruptor {
+    z-index: 10;
+    position: relative;
 }
 
+#bombilla {
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 50px;
+    position: absolute; 
+    z-index: 1; 
+}
+
+.contenedorSlider {
+    grid-column: 2;  
+    grid-row: span 2;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espaciado entre elementos */
+    margin: 20%;
+    color: white;
+    z-index: 3;
+}
+
+input[type="range"] {
+    width: 50%;
+    z-index: 2;
+}
