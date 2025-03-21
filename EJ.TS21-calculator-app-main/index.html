@@ -1,26 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
+<div class="carcasaCalc">
+  <div class="pantalla" id="pantalla">0</div>
 
+<div class="teclado">
+<div class="teclas">
+  <button class="numerico" data-num="7">7</button>
+  <button class="numerico" data-num="8">8</button>
+  <button class="numerico" data-num="9">9</button>
+  <button class="del" data-op="DEL">DEL</button>
+
+  <button class="numerico" data-num="4">4</button>
+  <button class="numerico" data-num="5">5</button>
+  <button class="numerico" data-num="6">6</button>
+  <button class="operador" data-op="+">+</button>
+
+  <button class="numerico" data-num="1">1</button>
+  <button class="numerico" data-num="2">2</button>
+  <button class="numerico" data-num="3">3</button>
+  <button class="operador" data-op="-">-</button>
+
+  <button class="numerico" data-num=".">.</button>
+  <button class="numerico" data-num="0">0</button>
+  <button class="operador" data-op="/">/</button>
+  <button class="operador" data-op="*">x</button>
+
+  <button class="reset" data-op="RESET">RESET</button>
+  <button class="igual" data-op="=">=</button>
+</div>
+</div>
+</div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Dani Sanchez</a>.
   </div>
 </body>
 </html>
