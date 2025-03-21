@@ -7,8 +7,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const botones = document.querySelectorAll(".numerico");
   const operadores = document.querySelectorAll(".operador");
   const igual = document.querySelector(".igual") as HTMLButtonElement | null;
+  const reset = document.querySelector(".reset") as HTMLButtonElement;
+  const del = document.querySelector(".del") as HTMLButtonElement;
 
-  // Botones numéricos
+
   botones.forEach((boton) => {
     boton.addEventListener("click", () => {
       const num = boton.getAttribute("datosNum");
@@ -22,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Botones de operador
+
   operadores.forEach((boton) => {
     boton.addEventListener("click", () => {
       const op = boton.getAttribute("datosOp");
@@ -34,7 +36,24 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Botón igual
+  reset?.addEventListener("click", () => {
+    pantalla.textContent = "0";
+  });
+
+  del?.addEventListener("click", () => {
+    if (pantalla.textContent === "0" || pantalla.textContent === "ERROR") {
+    
+      return;
+    }
+  
+    pantalla.textContent = pantalla.textContent!.slice(0, -1);
+  
+    if (pantalla.textContent === "") {
+      pantalla.textContent = "0";
+    }
+  });
+  
+
   igual?.addEventListener("click", () => {
     valor2 = parseFloat(pantalla.textContent!);
     let resultado: number = 0;
