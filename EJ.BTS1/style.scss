@@ -1,0 +1,9 @@
+.fondo {
+    background-color: orange;
+  }
+
+@media (max-width: 768px) {
+    .fondo {
+      background-color: rgb(153, 255, 0);
+    }
+  }

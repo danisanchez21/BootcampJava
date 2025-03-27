@@ -1,0 +1,23 @@
+{
+  "name": "bootcampjava",
+  "version": "1.0.0",
+  "description": "![Gatito bonito](https://www.dlithe.com/wp-content/uploads/2022/09/java_bOOTCAMP-min-1360x800.png)",
+  "main": "index.js",
+"scripts": {
+  "sass:watch": "sass src/scss/style.scss dist/style.css --watch",
+  "ts:watch": "tsc --watch",
+  "start": "npm run sass:watch & npm run ts:watch"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danisanchez21/BootcampJava.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danisanchez21/BootcampJava/issues"
+  },
+  "homepage": "https://github.com/danisanchez21/BootcampJava#readme"
+}
+
