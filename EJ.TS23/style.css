@@ -13,7 +13,7 @@ place-items: center;
   .fantasy3-text {
     font-family: 'Uncial Antiqua', serif;
     font-size: 2rem;
-    color: gold;
+    color: yellow;
     text-shadow: 2px 2px 4px #000;
     letter-spacing: 2px;
   }
@@ -22,7 +22,7 @@ place-items: center;
   .fantasy2-text {
     font-family: 'Uncial Antiqua', serif;
     font-size: 0.5rem;
-    color: gold;
+    color: yellow;
     text-shadow: 2px 2px 4px #000;
     letter-spacing: 2px;
   }
@@ -31,7 +31,7 @@ place-items: center;
   .fantasy1-text {
     font-family: 'Uncial Antiqua', serif;
     font-size: 1rem;
-    color: gold;
+    color: yellow;
     text-shadow: 2px 2px 4px #000;
     letter-spacing: 2px;
   }
@@ -58,7 +58,7 @@ body{
     position: relative;
     width: 150px;
     height: 73px;
-    background-image: url('./images/card-bg.jpg'); /* imagen de fondo */
+    background-image: url('./images/card-bg.jpg');
     background-size: cover;
     background-position: center;
     border: 3px solid yellow;
@@ -67,12 +67,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
   
   .card-overlay {
     color: yellow;
     text-align: center;
-    font-family: 'Uncial Antiqua', serif; /* o 'Viking' si la tienes */
+    font-family: 'Uncial Antiqua', serif; 
     text-shadow: 1px 1px 2px black;
   }
   
@@ -86,4 +87,31 @@ body{
     margin: 0.2rem 0 0;
     font-size: 0.8rem;
   }
+
+  .card:active {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px yellow;
+  }
+  
+  .card-container .card:nth-child(1) {
+    background-image: url('./images/1.webp');
+  }
+  
+  .card-container .card:nth-child(2) {
+    background-image: url('./images/2.webp');
+  }
+  
+  .card-container .card:nth-child(3) {
+    background-image: url('./images/3.webp');
+  }
+  
+  .card-container .card:nth-child(4) {
+    background-image: url('./images/4.webp');
+  }
+  
+  .card-container .card:nth-child(5) {
+    background-image: url('./images/5.webp');
+  }
+  
+  
   
