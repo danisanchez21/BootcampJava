@@ -1,11 +1,1 @@
-
-.fondo {
-    background-color: orange;
-  }
-
-  @media (max-width: 768px) {
-    .fondo {
-      background-color: blue !important;
-    }
-  }
 /*# sourceMappingURL=style.css.map */
