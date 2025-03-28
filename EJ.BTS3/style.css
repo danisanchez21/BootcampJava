@@ -1,3 +1,12 @@
-.bg-fuchsia {
-  background-color: fuchsia;
+.caja {
+  background-color: #74b9ff;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+.caja:hover {
+  background-color: #0984e3;
 }/*# sourceMappingURL=style.css.map */

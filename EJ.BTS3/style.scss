@@ -1,4 +1,17 @@
-.bg-fuchsia {
-    background-color: fuchsia;
+$caja-bg: #74b9ff;        // color de fondo
+$caja-text: #fff;         // color de texto
+$caja-hover: #0984e3;     // color al pasar el ratón
+
+.caja {
+  background-color: $caja-bg;
+  color: $caja-text;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $caja-hover;
   }
-  
+}
