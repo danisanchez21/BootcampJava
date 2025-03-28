@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "outDir": "./dist/javascript",
-    "rootDir": "./src/ts",
     "target": "es6",
     "module": "es6",
+    "outDir": "./dist/javascript",
+    "rootDir": "./src/ts",
     "strict": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
