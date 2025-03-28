@@ -4,9 +4,9 @@
   "description": "![Gatito bonito](https://www.dlithe.com/wp-content/uploads/2022/09/java_bOOTCAMP-min-1360x800.png)",
   "main": "index.js",
 "scripts": {
-  "sass:watch": "sass src/scss/style.scss dist/style.css --watch",
-  "ts:watch": "tsc --watch",
-  "start": "npm run sass:watch & npm run ts:watch"
+  "sass:watch": "sass src/sass/style.scss dist/style.css --watch"
+
+
 },
   "repository": {
     "type": "git",
